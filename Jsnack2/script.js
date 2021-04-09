@@ -1,3 +1,5 @@
+// CHIEDI ALL'UTENTE DI INSERIRE 2 PAROLE  E STAMPARE PER PRIMA QUELLA PIù CORTA
+
 var parola1 = prompt("inserisci parola1");
 // console.log(parola1.lenght)
 var parola2 = prompt("inserisci parola2");
