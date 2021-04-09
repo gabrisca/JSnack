@@ -1,5 +1,11 @@
-var insertNumber = 0;
-for (i = 0; i < 10; i++) {
+var somma = 0;
+
+for (var i = 0; i < 10; i++) {
   // Viene eseguito 10 volte
-  console.log(parseInt(prompt("inserisci un numero")));
+  var nuovoNumero = parseInt(prompt("inserisci un numero")); // variabile nuovo numero
+  console.log(nuovoNumero) 
+
+  somma += nuovoNumero; 
 }
+
+console.log(somma);
