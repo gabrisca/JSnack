@@ -22,5 +22,5 @@ for (var i = 0; i < listaInvitati.length; i++) {
 if (foundIt) {
   alert("Benvenuto signore/a"); // se il nome è sulla lista do il benvenuto
 } else {
-  alert("Mi dispiace. Il suo nome non è nella lista. Arrivederci") // se il nome non è sulla lista dico di andarsene
+  alert("Mi dispiace. Il suo nome non è sulla lista. Arrivederci") // se il nome non è sulla lista dico di andarsene
 }
