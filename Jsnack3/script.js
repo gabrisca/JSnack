@@ -1,3 +1,4 @@
+// CHIEDERE 10 VOLTE ALL'UTENTE DI INSERIRE UN NUMERO E STAMPARE LA SOMMA
 var somma = 0;
 
 for (var i = 0; i < 10; i++) {
