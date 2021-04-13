@@ -10,7 +10,7 @@ for(i = 1; i <= 10; i++){
   console.log(i); // stampo la lista di numeri da 1 a 10
   console.log("-----");
   somma += i; // sommo i numeri da 1 a 10
-  media = somma / 10; // calcolo la media 
+  media = somma / 10; // calcolo la media (totale diviso il numero dei valori immessi)
 }
 
 console.log("la somma totale è " + somma) // somma totale
