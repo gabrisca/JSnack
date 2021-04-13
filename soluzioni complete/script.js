@@ -76,3 +76,105 @@ for (var i = 0; i < 6; i++) {
 }
 
 console.log(listaNumeri); // output
+
+
+// <<<<<<<<<< JSNACK6 >>>>>>>>>>>
+// STAMPA IL CUBO DEI PRIMI N NUMERI DOVE N è UN NUMERO INDICATO DALL'UTENTE
+
+
+var numeroIserito = parseInt(prompt("Inserisci un numero"));
+// var numeroIserito = 5;
+console.log(numeroIserito);
+
+var somma = 0; // flag
+
+for (var i = 1; i <= numeroIserito; i++){
+  var numeriCubici = console.log(Math.pow(i,3));
+  somma += Math.pow(i,3); // += necessario per commare tutti i cubi
+}
+
+console.log("la somma dei cubi è " + somma)
+
+
+// <<<<<<<<<< JSNACK7 >>>>>>>>>>>
+// STAMPA LE POTENZE DI 2 FINO A 1000
+
+var limite = 1000;
+var potenza = 1;
+var counterPotenza = 1;
+
+//soluzione 1
+// while (potenza < limite){
+//   console.log(potenza);
+//   console.log("Elevo il 2 alla " +counterPotenza);
+//   potenza = Math.pow(2, counterPotenza);
+//   counterPotenza++;
+// }
+
+//soluzione 2
+while (potenza < limite){
+  console.log(potenza);
+  potenza *= 2;
+}
+
+//soluzione 3
+// for(var i = 1; potenza < limite; i++){
+//   potenza = Math.pow(2,i);
+//   console.log(potenza);
+// }
+
+
+// <<<<<<<<<< JSNACK8 >>>>>>>>>>>
+// Chiedi un numero di 4 cifre all’utente
+// e calcola la somma di tutte le cifre che compongono il numero.
+
+var numero = prompt("Inserisci un numero di 4 cifre");
+console.log("hai inserito il numero " + numero);
+console.log("-------")
+
+console.log("Il numero che hai inserito è lungo " + numero.toString().length + " cifre"); // .toString mi restituisce l'output della proprietà lenght applicata ad un numero
+console.log("-------")
+
+if (numero.toString().length < 4) { // condizione perchè sia valido l'inserimento del numero
+  alert("Numero troppo piccolo. Devi inserire un numero di 4 cifre");
+} else if (numero.toString().length > 4) {
+  alert("Numero troppo grande. Devi inserire un numero di 4 cifre");
+} else {
+  console.log("numero inserito correttamente " + numero);
+  console.log("--------")
+}
+
+var cifreNumero = numero.split(''); // .split mi dà il numero suddiviso in cifre
+console.log("il numero è composto dalle cifre " + cifreNumero)
+console.log("--------")
+
+var somma = 0;
+
+for (var i = 0; i < numero.length; i++) { // ciclo for per sommare le cifre
+  somma += parseInt(numero[i]);
+}
+
+console.log("la somma di " + cifreNumero + " è " + somma);
+
+
+// <<<<<<<<<< JSNACK9 >>>>>>>>>>>
+//Calcola la somma e la media dei primi 10 numeri
+
+var listaNumeri = [ ];
+
+var somma = 0;
+
+var media;
+
+for(i = 1; i <= 10; i++){
+  console.log(i); // stampo la lista di numeri da 1 a 10
+  console.log("-----");
+  somma += i; // sommo i numeri da 1 a 10
+  media = somma / 10; // calcolo la media (totale diviso il numero dei valori immessi)
+}
+
+console.log("la somma totale è " + somma) // somma totale
+console.log("-----");
+
+console.log("la media totale è " + media)// media 
+console.log("-----");
